@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>NEW TECH | Sri Lankans' Tech Mark</title>
+    <link rel="icon" href="images/ntlogo.jpg" />
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <audio id="sound" src="audios/sound.mp3"></audio>
+
+    <div class="content hidden">
+
+        <!-- nav bar -->
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-body fixed-top"
+                data-bs-theme="dark" style="width: 100%;">
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center fw-bold logo1" href="index.html"><img
+                            src="images/ntlogo.jpg" style="height: 40px;" alt="">
+                        <h3 class="brandname">NEW TECH</h3>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </n>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span><i class="bi bi-grid-1x2-fill text-light"></i></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="input-group rounded">
+                            <input type="search" class="form-control rounded" placeholder="Search here"
+                                aria-label="Search" aria-describedby="search-addon" />
+                            <button class="input-group-text border-0" id="search-addon">
+                                <i class="bi bi-search"></i>
+                            </button>
+                            <button class="input-group-text border-0" id="search-addon">
+                                <i class="bi bi-mic-fill"></i>
+                            </button>
+                        </div>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item" title="Home"><a
+                                    class="fs-2 ms-lg-4 ms-md-4 mb-md-3 mb-3 text-mg-center text-sm-center text-center"
+                                    href="index.html"><i class="bi bi-house-fill h3 tabicon"></i></a></li>
+                            <li class="nav-item" title="Shop"><a
+                                    class="fs-2 ms-lg-4 ms-md-4 mb-md-3 mb-3 text-mg-center text-sm-center text-center"
+                                    href="shop.html"><i class="bi bi-bag-fill h3 tabiconactive"></i></a></li>
+                            <li class="nav-item" title="Contact"><a
+                                    class="fs-2 ms-lg-4 ms-md-4 mb-md-3 mb-3 text-mg-center text-sm-center text-center"
+                                    href="contact.html"><i class="bi bi-telephone-fill h3 tabicon"></i></a></li>
+                            <li class="nav-item dropdown" title="My account"><a
+                                    class="fs-2 ms-lg-4 ms-md-4 mb-md-3 mb-3 text-mg-center text-sm-center text-center"
+                                    data-bs-toggle="dropdown" aria-expanded="false"><i
+                                        class="bi bi-person-fill h3 tabicon"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li></i><a class="dropdown-item" href="myprofilesettings.html"><i
+                                                class="bi bi-person"></i>&nbsp;&nbsp;&nbsp;My profile settings</a></li>
+                                    <li></i><a class="dropdown-item" href="myorders.html"><i
+                                                class="bi bi-bag"></i>&nbsp;&nbsp;&nbsp;My orders</a></li>
+                                    <li></i><a class="dropdown-item" href="payments.html"><i
+                                                class="bi bi-credit-card-2-back"></i>&nbsp;&nbsp;&nbsp;My payments</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="myreviews.html"><i
+                                                class="bi bi-star"></i>&nbsp;&nbsp;&nbsp;My
+                                            reviews</a></li>
+                                    <li><a class="dropdown-item" href="returns.html"><i
+                                                class="bi bi-x-circle"></i>&nbsp;&nbsp;&nbsp;My returns and
+                                            cancelations</a></li>
+                                    <li></i><a class="dropdown-item" href="#"><i
+                                                class="bi bi-box-arrow-left"></i>&nbsp;&nbsp;&nbsp;Logout</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="sellerlogin.html"><i
+                                                class="bi bi-box-arrow-in-right"></i>&nbsp;&nbsp;&nbsp;Seller login</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="msg.html"><i
+                                                class="bi bi-chat-dots"></i>&nbsp;&nbsp;&nbsp;Message center</a></li>
+                                    <li><a class="dropdown-item" href="help.html"><i
+                                                class="bi bi-info-circle"></i>&nbsp;&nbsp;&nbsp;Help center</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item" title="Sign In"><a
+                                    class="fs-2 ms-lg-4 ms-md-4 mb-md-3 mb-3 text-mg-center text-sm-center text-center"
+                                    href="signin.html"><i class="bi bi-people-fill h3 tabicon"></i></a></li>
+                        </ul>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item" title="Wishlist"><a
+                                    class="wishbutton fs-2 ms-lg-4 ms-md-4 mb-md-3 mb-3 text-mg-center text-sm-center text-center"
+                                    href="wishlist.html"><i class="bi bi-heart h3 tabicon"></i>
+                                    <span class="count"><b>3</b></span>
+                                </a></li>
+                            <li class="nav-item" title="Cart"><a
+                                    class="cartbutton fs-2 ms-lg-4 ms-md-4 mb-md-3 mb-3 text-mg-center text-sm-center text-center"
+                                    href="cart.html"><i class="bi bi-cart h3 tabicon"></i>
+                                    <span class="count"><b>0</b></span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- /nav bar -->
+
+        <!-- content -->
+        <div class="d-flex align-content-end justify-content-end" style="width: 100%; margin-top: 69px;">
+            <button class="openbtn bg-transparent ms-3 ms-lg-5" onclick="openNav()">
+                <h6><b>FILTER BY : </b> <i class="bi bi-filter-circle-fill h2 text-black"></i></h6>
+            </button>
+            <div class="sort-container">
+                <button class="sort-btn bg-transparent ms-3 ms-lg-5">
+                    <h6><b>SORT BY : </b> <i class="bi bi-filter-circle-fill h2 text-black"></i></h6>
+                </button>
+                <div class="sort-options">
+                    <label>
+                        <input type="radio" name="sort" value="price-asc">
+                        Price: Low to High
+                    </label>
+                    <label>
+                        <input type="radio" name="sort" value="price-desc">
+                        Price: High to Low
+                    </label>
+                    <label>
+                        <input type="radio" name="sort" value="newest">
+                        Newest Arrivals
+                    </label>
+                    <label>
+                        <input type="radio" name="sort" value="rating">
+                        Customer Rating
+                    </label>
+                    <label>
+                        <input type="radio" name="sort" value="popularity">
+                        Popularity
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="typing-container">
+            <span id="text"></span><span class="cursor">|</span>
+        </div>
+
+
+
+
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
+                    class="bi bi-x-circle-fill text-white h3"></i></a>
+
+            <div class="filter-section">
+                <h3>Filter by:</h3>
+                <h4>Categories</h4>
+                <ul>
+                    <li><input type="radio" name="category"><label for="laptops">Laptops</label></li>
+                    <li><input type="radio" name="category"><label for="smartphones">Smartphones</label></li>
+                    <li><input type="radio" name="category"><label for="tablets">Tablets</label></li>
+                    <li><input type="radio" name="category"><label for="televisions">Televisions</label></li>
+                    <li><input type="radio" name="category"><label for="cameras">Cameras</label></li>
+                    <li><input type="radio" name="category"><label for="headphones">Headphones</label></li>
+                    <li><input type="radio" name="category"><label for="smartwatches">Smartwatches</label></li>
+                    <li><input type="radio" name="category"><label for="accessories">Accessories</label></li>
+                </ul>
+                <h4>Price Range(LKR)</h4>
+                <ul>
+                    <li><input type="radio" name="price"><label>Under 2500</label></li>
+                    <li><input type="radio" name="price"><label>2500 - 5000</label></li>
+                    <li><input type="radio" name="price"><label>5000 - 25 000</label></li>
+                    <li><input type="radio" name="price"><label>25 000 - 100 000</label></li>
+                    <li><input type="radio" name="price"><label>100 000 - 500 000</label></li>
+                    <li><input type="radio" name="price"><label>Above 500 000</label></li>
+                </ul>
+                <h4>Brand</h4>
+                <ul>
+                    <li><input type="radio" name="brand" id="apple"><label for="apple">Apple</label></li>
+                    <li><input type="radio" name="brand" id="samsung"><label for="samsung">Samsung</label></li>
+                    <li><input type="radio" name="brand" id="sony"><label for="sony">Sony</label></li>
+                    <li><input type="radio" name="brand" id="dell"><label for="dell">Dell</label></li>
+                    <li><input type="radio" name="brand" id="hp"><label for="hp">HP</label></li>
+                    <li><input type="radio" name="brand" id="lenovo"><label for="lenovo">Lenovo</label></li>
+                    <li><input type="radio" name="brand" id="canon"><label for="canon">Canon</label></li>
+                    <li><input type="radio" name="brand" id="nikon"><label for="nikon">Nikon</label></li>
+                </ul>
+                <h4>Customer Ratings</h4>
+                <ul>
+                    <li><input type="radio" name="rating" id="4stars"><label for="4stars">4 stars & up</label></li>
+                    <li><input type="radio" name="rating" id="3stars"><label for="3stars">3 stars & up</label></li>
+                    <li><input type="radio" name="rating" id="2stars"><label for="2stars">2 stars & up</label></li>
+                    <li><input type="radio" name="rating" id="1star"><label for="1star">1 star & up</label></li>
+                </ul>
+                <h4>Condition</h4>
+                <ul>
+                    <li><input type="radio" name="condition" id="new"><label for="new">New</label></li>
+                    <li><input type="radio" name="condition" id="refurbished"><label
+                            for="refurbished">Refurbished</label></li>
+                    <li><input type="radio" name="condition" id="used"><label for="used">Used</label></li>
+                </ul>
+                <h4>Color</h4>
+                <ul>
+                    <li><input type="radio" name="color" id="black"><label for="black">Black</label></li>
+                    <li><input type="radio" name="color" id="white"><label for="white">White</label></li>
+                    <li><input type="radio" name="color" id="silver"><label for="silver">Silver</label></li>
+                    <li><input type="radio" name="color" id="gold"><label for="gold">Gold</label></li>
+                    <li><input type="radio" name="color" id="blue"><label for="blue">Blue</label></li>
+                    <li><input type="radio" name="color" id="red"><label for="red">Red</label></li>
+                </ul>
+                <h4>Discount</h4>
+                <ul>
+                    <li><input type="radio" name="discount" id="10off"><label for="10off">10% off or more</label></li>
+                    <li><input type="radio" name="discount" id="20off"><label for="20off">20% off or more</label></li>
+                    <li><input type="radio" name="discount" id="30off"><label for="30off">30% off or more</label></li>
+                    <li><input type="radio" name="discount" id="50off"><label for="50off">50% off or more</label></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="main m-lg-5 mt-0 mb-0 p-5 pt-lg-0 pb-lg-0">
+            <div class="container">
+                <div id="product-container" class="product-container"></div>
+                <div class="pagination" id="pagination"></div>
+            </div>
+        </div>
+
+         <!-- Pageup button -->
+         <button id="scrollToTopBtn" title="Go to top">
+            <h4><i class="bi bi-caret-up-fill upicon"></i></h4>
+        </button>
+        <!-- /Pageup button -->
+
+        <!-- footer -->
+        <footer class="bg-dark text-center text-white col-12">
+            <div class="container-fluid p-4 pb-0" style="background-color: rgba(0, 0, 0, 0.2); width: 100%;">
+                <section class="">
+                    <div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-auto">
+                                <p class="pt-2">
+                                    <strong>Sign up for our newsletter</strong>
+                                </p>
+                            </div>
+
+                            <div class="col-md-5 col-12">
+                                <div class="form-outline form-white mb-4">
+                                    <input type="email" class="form-control" placeholder="Email address" />
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <button type="submit" class="subbtn" onclick="sound();">
+                                    <b>Subscribe</b>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="text-white text-center text-lg-start col-12" style="background-color: #23242a;">
+                <div class="container p-4">
+                    <div class="row mt-4">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">NEW TECH</h5>
+
+                            <ul class="fa-ul" style="margin-left: 1.65em;">
+                                <li class="mb-1">
+                                    <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">'New Tech',
+                                        De
+                                        Silva building, Galle Road, Kalutara south, Kalutara.</span>
+                                </li>
+                                <li class="mb-1">
+                                    <span class="fa-li"><i class="fas fa-envelope"></i></span><span
+                                        class="ms-2">newtech@gmail.com</span>
+                                </li>
+                                <li class="mb-1">
+                                    <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+94 77
+                                        1234
+                                        567</span>
+                                </li>
+                                <li class="mb-1">
+                                    <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+94 34
+                                        2222
+                                        222</span>
+                                </li>
+                            </ul>
+
+                            <div class="mt-2">
+                                <h5 class="text-uppercase mb-1">Follow us:
+                                    <a type="button" class="btn btn-floating btn-info btn-md">
+                                        <i class="bi bi-facebook"></i></a>
+                                    <a type="button" class="btn btn-floating btn-info btn-md">
+                                        <i class="bi bi-instagram"></i></a>
+                                    <a type="button" class="btn btn-floating btn-info btn-md">
+                                        <i class="bi bi-twitter"></i></a>
+                                    <a type="button" class="btn btn-floating btn-info btn-md">
+                                        <i class="bi bi-youtube"></i></a>
+                                </h5>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                            <div class="footer-content">
+                                <h5 class="text-uppercase mb-4">Site map</h5>
+
+                                <ul class="footer-links">
+                                    <li><a href="index.html" class="footer-link text-decoration-none text-white">
+                                            <p class="sitelink mb-0">Home</p>
+                                        </a></li>
+                                    <li><a href="shop.html" class="footer-link text-decoration-none text-white">
+                                            <p class="sitelink mb-0">Shopping with
+                                                us</p>
+                                        </a>
+                                    </li>
+                                    <li><a href="contact.html" class="footer-link text-decoration-none text-white">
+                                            <p class="sitelink mb-0">Contact Us</p>
+                                        </a>
+                                    </li>
+                                    <li><a href="myprofilesettings.html" class="footer-link text-decoration-none text-white">
+                                            <p class="sitelink mb-0">My account</p>
+                                        </a>
+                                    </li>
+                                    <li><a href="signin.html" class="footer-link text-decoration-none text-white">
+                                            <p class="sitelink mb-0">Sign In</p>
+                                        </a></li>
+                                    <li><a href="wishlist.html" class="footer-link text-decoration-none text-white">
+                                            <p class="sitelink mb-0">My Wishlist</p>
+                                        </a>
+                                    </li>
+                                    <li><a href="cart.html" class="footer-link text-decoration-none text-white">
+                                            <p class="sitelink mb-0">View Cart</p>
+                                        </a>
+                                    </li>
+                                    <li><a href="signin.html" class="footer-link text-decoration-none text-white">
+                                            <p class="sitelink mb-0">Admin Sign In</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                            <div class="footer-content">
+                                <h5 class="text-uppercase mb-4">Site map</h5>
+
+                                <ul class="footer-links">
+                                    <li><a href="index.html" class="footer-link text-decoration-none text-white">
+                                            <p class="sitelink mb-0">About Us</p>
+                                        </a></li>
+                                    <li><a href="index.html" class="footer-link text-decoration-none text-white">
+                                            <p class="sitelink mb-0">Collaborate with
+                                                us</p>
+                                        </a></li>
+                                    <li><a href="index.html" class="footer-link text-decoration-none text-white">
+                                            <p class="sitelink mb-0">Delivery
+                                                Information</p>
+                                        </a></li>
+                                    <li><a href="myorders.html" class="footer-link text-decoration-none text-white">
+                                            <p class="sitelink mb-0">Order</p>
+                                        </a></li>
+                                    <li><a href="help.html" class="footer-link text-decoration-none text-white">
+                                            <p class="sitelink mb-0">Help</p>
+                                        </a></li>
+                                    <li><a href="help.html" class="footer-link text-decoration-none text-white">
+                                            <p class="sitelink mb-0">Support
+                                                Center</p>
+                                        </a>
+                                    </li>
+                                    <li><a href="index.html" class="footer-link text-decoration-none text-white">
+                                            <p class="sitelink mb-0">Privacy
+                                                Policy</p>
+                                        </a>
+                                    </li>
+                                    <li><a href="index.html" class="footer-link text-decoration-none text-white">
+                                            <p class="sitelink mb-0">Terms &
+                                                Conditions</p>
+                                        </a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">Open hours</h5>
+
+                            <table class="table text-center text-white">
+                                <tbody class="font-weight-normal">
+                                    <tr>
+                                        <td class="text-white">Mon - Sat:</td>
+                                        <td class="text-white">8am - 8pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-white">Sunday:</td>
+                                        <td class="text-white">9am - 9pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="mt-4">
+                                <h5 class="text-uppercase mb-1">Secured Payment Gateways</h5>
+
+                                <img src="images/paymentgate.png" alt="payment" class="payment-img">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); width: 100%;">
+                    Copyright &copy; 2024 NEW TECH &nbsp;&nbsp;|&nbsp;&nbsp; All rights reserved.
+                    <p class=" mt-3">Designed by Dishan De Silva</p>
+                </div>
+            </section>
+
+        </footer>
+        <!-- /footer -->
+
+        <!-- /content -->
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/scriptpageup.js"></script>
+    <script src="js/textscript.js"></script>
+    <script src="js/shopscript.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
